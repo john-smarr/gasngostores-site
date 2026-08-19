@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Order Food | Gas N Go Stores</title>
+  <meta name="description" content="Order fresh food for pickup from your nearest Gas N Go location. Powered by Vroom Delivery.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;900&family=Barlow:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="canonical" href="https://gasngostores.com/order/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Order Food | Gas N Go Stores">
+  <meta property="og:description" content="Order fresh food for pickup from your nearest Gas N Go location.">
+  <meta property="og:url" content="https://gasngostores.com/order/">
+  <meta property="og:site_name" content="Gas N Go Stores">
+  <meta property="og:image" content="https://gasngostores.com/images/logo.png">
+</head>
+<body>
+
+<div class="topbar">
+  <a href="tel:2299240306"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8a19.79 19.79 0 01-3.07-8.67A2 2 0 012 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 9.91a16 16 0 006.16 6.16l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>(229) 924-0306</a>
+  <a href="mailto:help@gasngostores.com"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>help@gasngostores.com</a>
+</div>
+
+<nav>
+  <div class="nav-inner">
+    <a class="nav-logo" href="/"><img src="/images/logo.png" alt="Gas N Go Stores"></a>
+    <ul class="nav-links">
+      <li><a href="/locations/">Locations</a></li>
+      <li><a href="/rewards/">Rewards</a></li>
+      <li><a href="/order/">Order</a></li>
+      <li><a href="/contact-us/">Contact Us</a></li>
+      <li><a href="/order/" class="nav-cta">Order Now</a></li>
+    </ul>
+    <button class="nav-hamburger" aria-label="Open menu" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="mobile-nav" id="mobileNav">
+    <a href="/locations/">Locations</a>
+    <a href="/rewards/">Rewards</a>
+    <a href="/order/">Order</a>
+    <a href="/contact-us/">Contact Us</a>
+  </div>
+</nav>
+
+<div class="order-intro">
+  <h1 class="section-title">Order Food</h1>
+  <p>Order fresh food for pickup from your nearest Gas N Go location.</p>
+</div>
+
+<iframe class="order-frame" src="https://www.vroomdelivery.com/gasngo" title="Order food from Gas N Go" loading="lazy"></iframe>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <img src="/images/logo.png" alt="Gas N Go Stores">
+        <p>Georgia's go-to stop for fuel, fresh food, and rewards. Convenience stores and fuel stations serving communities across the state.</p>
+        <div class="footer-social">
+          <a href="https://facebook.com/gasngo229" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Pages</h4>
+        <a href="/locations/">Locations</a>
+        <a href="/rewards/">Rewards</a>
+        <a href="/order/">Order</a>
+        <a href="/contact-us/">Contact Us</a>
+        <a href="https://www.paycomonline.net/v4/ats/web.php/jobs" target="_blank" rel="noopener">Careers</a>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <a href="tel:2299240306">(229) 924-0306</a>
+        <a href="mailto:help@gasngostores.com">help@gasngostores.com</a>
+        <a href="https://facebook.com/gasngo229" target="_blank" rel="noopener">Facebook</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 Gas N Go Stores. All rights reserved.</span>
+      <span>Fuel Your Journey</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+function toggleMenu(){document.getElementById('mobileNav').classList.toggle('open')}
+</script>
+</body>
+</html>
