@@ -36,9 +36,9 @@ a{text-decoration:none;color:inherit}
    Navigation
    ═══════════════════════════════════════════════════════ */
 nav{background:var(--charcoal);border-bottom:2px solid #1a1d20;position:sticky;top:0;z-index:100}
-.nav-inner{max-width:1280px;margin:0 auto;padding:0 24px;display:flex;align-items:center;justify-content:space-between;height:88px}
+.nav-inner{max-width:1280px;margin:0 auto;padding:0 24px;display:flex;align-items:center;justify-content:space-between;height:104px}
 .nav-logo{display:flex;align-items:center}
-.nav-logo img{height:80px;width:auto}
+.nav-logo img{height:96px;width:auto}
 .nav-links{display:flex;align-items:center;gap:0;list-style:none}
 .nav-links>li{position:relative}
 .nav-links>li>a{color:var(--white);font-family:var(--font-body);font-weight:500;font-size:13px;letter-spacing:.1em;text-transform:uppercase;padding:0 18px;height:72px;display:flex;align-items:center;border-bottom:3px solid transparent;transition:border-color .15s,color .15s}
@@ -311,7 +311,7 @@ footer{background:var(--charcoal);color:rgba(255,255,255,.6);padding:60px 24px 3
 @media(max-width:768px){
   .nav-links{display:none}
   .nav-hamburger{display:block}
-  .mobile-nav.open{display:block;overflow-y:auto;-webkit-overflow-scrolling:touch;max-height:calc(100vh - 88px)}
+  .mobile-nav.open{display:block;overflow-y:auto;-webkit-overflow-scrolling:touch;max-height:calc(100vh - 104px)}
   .hero{min-height:auto}
   .hero-inner{min-height:auto;padding:60px 20px 48px}
   .hero h1{font-size:32px}
