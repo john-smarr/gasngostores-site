@@ -84,8 +84,10 @@
   <a href="/">Home</a><span class="bc-sep">&rsaquo;</span><a href="/locations/">Locations</a><span class="bc-sep">&rsaquo;</span><span>Buena Vista</span>
 </div>
 
-<div class="loc-page-hero" style="background: linear-gradient(135deg, #0c637a 0%, #199abc 100%);">
-  <div class="loc-page-hero-inner">
+<div class="loc-hero" style="position:relative;min-height:400px;display:flex;align-items:center;color:var(--white);overflow:hidden;">
+  <img src="/images/store-front.jpg" alt="Gas N Go Store" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;z-index:0;" fetchpriority="high">
+  <div style="position:absolute;inset:0;background:rgba(12,99,122,0.82);z-index:1;"></div>
+  <div style="position:relative;z-index:2;max-width:1280px;margin:0 auto;padding:64px 24px;width:100%;">
     <span class="hero-eyebrow">Gas N Go &mdash; Buena Vista, Georgia</span>
     <h1>Welcome to the Buena Vista Gas N Go!</h1>
     <p>We offer top-tier fuel, fresh food, and exclusive rewards &ndash; right here in Buena Vista, Georgia.</p>
@@ -138,15 +140,20 @@
   </div>
 </section>
 
-<section style="background:var(--teal-soft);padding:80px 24px;">
-  <div class="section-inner" style="text-align:center;">
-    <h2 class="section-title">Download the Gas N Go App</h2>
-    <div class="app-features">
-      <div class="app-feature"><div class="app-icon">&#9981;</div>Save on every gallon</div>
-      <div class="app-feature"><div class="app-icon">&#127991;&#65039;</div>Pile on the discounts</div>
-      <div class="app-feature"><div class="app-icon">&#128142;</div>Keep track of your points</div>
+<section style="background:var(--teal-soft);padding:0;">
+  <div class="app-two-col">
+    <div>
+      <h2 class="section-title">Download the Gas N Go App</h2>
+      <div class="app-features">
+        <div class="app-feature"><div class="app-icon">&#9981;</div>Save on every gallon</div>
+        <div class="app-feature"><div class="app-icon">&#127991;&#65039;</div>Pile on the discounts</div>
+        <div class="app-feature"><div class="app-icon">&#128142;</div>Keep track of your points</div>
+      </div>
+      <a href="/rewards/" class="btn btn-teal">Get the App</a>
     </div>
-    <a href="/rewards/" class="btn btn-teal">Get the App</a>
+    <div class="app-two-col-img">
+      <img src="/images/app-home.png" alt="Gas N Go App">
+    </div>
   </div>
 </section>
 
