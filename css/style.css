@@ -340,3 +340,20 @@ footer{background:var(--charcoal);color:rgba(255,255,255,.6);padding:60px 24px 3
   .offerings-grid{grid-template-columns:1fr 1fr}
 }
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{transition:none!important}}
+
+/* ═══════════════════════════════════════════════════════
+   Location Page — New Sections
+   ═══════════════════════════════════════════════════════ */
+.loc-info-box { background:var(--white); border-radius:16px; border:1.5px solid #e0e0e0; padding:32px; }
+.loc-info-box h3 { font-family:'Montserrat',sans-serif; font-size:18px; font-weight:700; margin-bottom:20px; color:var(--teal); }
+.loc-info-row { display:flex; gap:12px; margin-bottom:14px; font-size:15px; }
+.loc-info-row strong { min-width:70px; color:var(--text); }
+.loc-directions-box { background:linear-gradient(135deg,#0c637a,#199abc); border-radius:16px; padding:32px; text-align:center; color:var(--white); }
+.loc-directions-box h3 { font-family:'Montserrat',sans-serif; font-size:20px; font-weight:700; margin-bottom:12px; }
+.loc-directions-box p { font-size:14px; opacity:.85; margin-bottom:24px; }
+.app-features { display:grid; grid-template-columns:repeat(3,1fr); gap:24px; margin:32px 0; }
+.app-feature { background:var(--white); border-radius:12px; padding:24px; text-align:center; font-size:15px; font-weight:600; }
+.app-feature .app-icon { font-size:32px; margin-bottom:12px; }
+@media(max-width:768px){
+  .app-features { grid-template-columns:1fr; }
+}
