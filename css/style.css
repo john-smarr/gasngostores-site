@@ -36,9 +36,9 @@ a{text-decoration:none;color:inherit}
    Navigation
    ═══════════════════════════════════════════════════════ */
 nav{background:var(--charcoal);border-bottom:2px solid #1a1d20;position:sticky;top:0;z-index:100}
-.nav-inner{max-width:1280px;margin:0 auto;padding:0 24px;display:flex;align-items:center;justify-content:space-between;height:72px}
+.nav-inner{max-width:1280px;margin:0 auto;padding:0 24px;display:flex;align-items:center;justify-content:space-between;height:88px}
 .nav-logo{display:flex;align-items:center}
-.nav-logo img{height:64px;width:auto}
+.nav-logo img{height:80px;width:auto}
 .nav-links{display:flex;align-items:center;gap:0;list-style:none}
 .nav-links>li{position:relative}
 .nav-links>li>a{color:var(--white);font-family:var(--font-body);font-weight:500;font-size:13px;letter-spacing:.1em;text-transform:uppercase;padding:0 18px;height:72px;display:flex;align-items:center;border-bottom:3px solid transparent;transition:border-color .15s,color .15s}
@@ -168,13 +168,13 @@ section{padding:80px 24px}
 /* ═══════════════════════════════════════════════════════
    Locations Page
    ═══════════════════════════════════════════════════════ */
-.page-hero{background:var(--charcoal);padding:80px 24px;text-align:center;color:var(--white)}
+.page-hero{background:linear-gradient(135deg,#0c637a 0%,#199abc 100%);padding:80px 24px;text-align:center;color:var(--white)}
 .page-hero h1{font-family:var(--font-display);font-size:56px;font-weight:900;line-height:1.05;margin-bottom:16px}
-.page-hero p{font-size:18px;color:rgba(255,255,255,.65);max-width:560px;margin:0 auto}
+.page-hero p{font-size:18px;color:rgba(255,255,255,.75);max-width:560px;margin:0 auto}
 .locations-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
 .location-card{background:var(--white);border-radius:16px;border:1.5px solid #e8ebee;padding:32px 28px;transition:box-shadow .2s,transform .2s}
 .location-card:hover{box-shadow:0 8px 32px rgba(17,19,21,0.10);transform:translateY(-2px)}
-.location-card h3{font-family:var(--font-display);font-size:24px;font-weight:700;margin-bottom:12px;color:var(--black)}
+.location-card h3{font-family:var(--font-display);font-size:24px;font-weight:700;margin-bottom:12px;color:var(--teal)}
 .location-card .loc-detail{display:flex;align-items:flex-start;gap:8px;margin-bottom:10px;font-size:14px;color:var(--muted)}
 .location-card .loc-detail strong{color:var(--text);font-weight:500;display:block}
 .location-card .loc-detail span{display:block;color:var(--muted)}
@@ -207,13 +207,16 @@ section{padding:80px 24px}
 .loc-info-item .value a{color:var(--text);transition:color .15s}
 .loc-info-item .value a:hover{color:var(--teal)}
 .loc-directions{text-align:center;margin-bottom:48px}
-.loc-offerings{background:var(--soft)}
+.loc-offerings{background:var(--teal-soft)}
 .loc-offerings-inner{max-width:900px;margin:0 auto}
 .offerings-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:40px}
-.offering-card{text-align:center;padding:24px 12px;background:var(--white);border-radius:16px;border:1.5px solid #e8ebee}
+.offering-card{text-align:center;padding:28px 16px;background:var(--white);border-radius:16px;border:1.5px solid #e8ebee;border-top:4px solid var(--teal)}
+.offering-card img{filter:invert(44%) sepia(72%) saturate(500%) hue-rotate(155deg) brightness(85%);}
+.offering-card h3{font-family:var(--font-display);font-size:16px;font-weight:700;color:var(--teal);margin-bottom:6px}
+.offering-card p{font-size:13px;color:var(--muted);margin:0}
 .offering-icon{width:48px;height:48px;margin:0 auto 12px;background:var(--teal);border-radius:50%;display:flex;align-items:center;justify-content:center}
 .offering-icon svg{width:24px;height:24px;fill:var(--white)}
-.offering-card h4{font-family:var(--font-display);font-size:15px;font-weight:700}
+.offering-card h4{font-family:var(--font-display);font-size:15px;font-weight:700;color:var(--teal)}
 
 /* ═══════════════════════════════════════════════════════
    Testimonials
@@ -221,7 +224,7 @@ section{padding:80px 24px}
 .testimonials{background:var(--lime-soft)}
 .testimonials-inner{max-width:1000px;margin:0 auto}
 .testimonials-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:40px}
-.testimonial-card{background:var(--white);border-radius:16px;padding:28px 24px;box-shadow:0 4px 16px rgba(17,19,21,0.06)}
+.testimonial-card{background:var(--white);border-radius:16px;padding:28px 24px;box-shadow:0 4px 16px rgba(17,19,21,0.06);border-top:4px solid var(--lime)}
 .testimonial-card blockquote{font-size:15px;color:var(--text);line-height:1.7;font-style:italic;margin-bottom:12px}
 .testimonial-card cite{font-size:13px;font-weight:700;color:var(--teal);font-style:normal}
 
@@ -308,7 +311,7 @@ footer{background:var(--charcoal);color:rgba(255,255,255,.6);padding:60px 24px 3
 @media(max-width:768px){
   .nav-links{display:none}
   .nav-hamburger{display:block}
-  .mobile-nav.open{display:block;overflow-y:auto;-webkit-overflow-scrolling:touch;max-height:calc(100vh - 72px)}
+  .mobile-nav.open{display:block;overflow-y:auto;-webkit-overflow-scrolling:touch;max-height:calc(100vh - 88px)}
   .hero{min-height:auto}
   .hero-inner{min-height:auto;padding:60px 20px 48px}
   .hero h1{font-size:32px}
@@ -344,7 +347,7 @@ footer{background:var(--charcoal);color:rgba(255,255,255,.6);padding:60px 24px 3
 /* ═══════════════════════════════════════════════════════
    Location Page — New Sections
    ═══════════════════════════════════════════════════════ */
-.loc-info-box { background:var(--white); border-radius:16px; border:1.5px solid #e0e0e0; padding:32px; }
+.loc-info-box { background:var(--white); border-radius:16px; border:1.5px solid #e0e0e0; border-top:4px solid var(--teal); padding:32px; }
 .loc-info-box h3 { font-family:'Montserrat',sans-serif; font-size:18px; font-weight:700; margin-bottom:20px; color:var(--teal); }
 .loc-info-row { display:flex; gap:12px; margin-bottom:14px; font-size:15px; }
 .loc-info-row strong { min-width:70px; color:var(--text); }
